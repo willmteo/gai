@@ -1,0 +1,101 @@
+#press{
+	background:white;
+	border-top: 1px solid $dark-grey;
+	.center {
+		min-height: 600px;
+		padding: 60px 0 120px 0;
+
+		h1 {
+			text-align: center;
+		} 
+
+        .timeline{
+        background-color:$main-blue;
+        width:15px;
+        height:1600px;
+		border-radius:25px;
+		box-shadow: 1px 1px 1px black;
+
+
+		.marker{
+		background-color:$nav-color;
+		width:15px;
+		height:15px;
+
+		}	
+
+		
+		
+
+		.press_pic{
+		margin-bottom:100px;
+		height:150px;
+
+        .date{
+        width:150px;
+		color:#EE7942;
+		font-weight:900;
+		font-family:$main-font;
+		margin-left:30px;
+        height:50px;
+
+		&:hover{
+		color:$main-blue;
+		text-decoration:underline;
+		}
+
+		}
+
+		
+       
+		img{
+		position:absolute;
+		float:left;
+        display:none;
+        width:380px;
+        margin-left:30px;
+        }
+        
+        .dotted_blue{
+		margin-left:440px;
+		width:400px;
+		height:400px;
+		display:none;
+
+		.dotted_post_title{
+		border-top:2px dashed $main-blue;
+		color:$nav-color;
+		font-size:20px;
+		font-weight:850;
+		width:100%;
+		height:75px;
+		padding-top:20px;
+		padding-bottom:20px;
+		text-align:center;
+		}	
+
+		.dotted_post_content{
+		width:100%;
+		height:100px;
+
+		&:hover{
+		width:400px;
+		}
+
+		}
+		} 
+			
+
+        } 
+
+        
+        
+          
+
+        
+        }
+	}
+
+
+
+}

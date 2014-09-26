@@ -1,0 +1,34 @@
+@font-face {
+	font-family: Proxima Nova;
+	src: url(styles/fonts/Proxima_Nova_Regular.otf);
+}
+
+@font-face {
+	font-family: Proxima Nova;
+	src: url(styles/fonts/Proxima_Nova_Bold.otf);
+	font-weight: bold;
+}
+
+// Header
+$header-height: 4em;
+$header-font-size: 1em;
+$header-logo-height: 40px;
+
+// Colors
+$nav-color: #757575;
+$main-blue: #35c5e5;
+$new-blue:#01B7E0;
+$new-grey:#202020;
+$paragraph-color: $nav-color;
+$light-grey: #fafafa; // used in home page, block 'Be a Member'
+$dark-grey: #ececec; // background in footer
+$new-blue:#1AC6E2;
+
+// Fonts
+$main-font: Proxima Nova;
+$roboto:'Roboto' , sans-serif;
+
+//////////
+// Home //
+//////////
+$experience-os-width: 2.5; // size of OS icon in columns 

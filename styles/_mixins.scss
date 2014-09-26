@@ -1,0 +1,159 @@
+@mixin parallax {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+@mixin photo_block($url) {
+	.photo_block {
+		height: 400px;
+		background: url($url) no-repeat;
+		@include parallax;
+	}
+}
+
+@mixin blue-button {
+	display: block;
+	height: 45px;
+	background: $main-blue;
+	border: none;
+	border-radius: 2px;
+	color: white;
+}
+
+@mixin social_buttons_block {
+	@include column(2.3);
+	margin-left: 30px;
+
+	span {
+		display: block;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	img {
+		display: inline-block;
+		width: 72px;
+		height: 72px;
+	}
+}
+
+@mixin webform_and_social {
+	> h2 {
+		@include column(12);
+		text-align: left;
+		margin-top: 50px;
+		margin-bottom: 20px;
+
+	}
+
+	> p {
+		@include column(12);
+		line-height: 1.25em;
+		margin-bottom: 40px;
+	}
+    
+    #gforms_confirmation_message {
+        font-size: 1.2em;
+        font-weight: bold;
+        
+        #gform_confirmation_wrapper_2 {
+            margin: 70px 0 0 25px;   
+        }
+    }
+
+	.gform_wrapper, #gforms_confirmation_message {
+		display: block;
+		@include column(9.3);
+		min-height: 180px;
+	 	border-right: 1px solid $dark-grey;
+	 	margin-bottom: 50px;
+        
+        li.gfield_error {
+            border: none;
+            width: 95%;
+            
+            label, input, textarea, select {
+                width: 94.8%;
+            }
+        }
+
+	 	.gform_heading {
+	 		display: none;
+	 	}
+
+	 	div.part1 {
+			@include column(5);
+		}
+
+	 	div.part2 {
+			@include column(5);
+			@include push(1);
+			@include pull(1);
+		}
+
+	 	label, input, textarea, select {
+			display: block;
+            // For the 2 columns
+            // width: 100%;
+			width: 90%;
+			font-weight: normal;
+		}
+
+		span.gfield_required {
+			color: inherit;
+		}
+
+		label {
+			margin-bottom: 8px;
+			margin-top: 0px;
+		}
+
+		input, textarea {
+			font-size: 14px;
+			color: inherit;
+			padding: 3px;
+			padding-left: 8px;
+		}
+
+		input {
+			margin-bottom: 20px;
+			height: 18px;
+			border: 1px solid #B9B9B9;
+			font-family: 'Proxima Nova';
+		}
+
+		textarea {
+			border: 1px solid #B9B9B9;
+			margin-bottom: 20px;
+		}
+
+		select {
+			margin-bottom: 20px !important;
+		}
+		input[type="submit"] {
+			@include blue-button;
+			@include column(3);
+			font-size: 1em;
+            margin: 0;
+			// margin-top: 10px;
+		}
+	}
+
+	.social {
+		@include social_buttons_block;
+	}
+}
+
+@mixin top_navigation {
+	height: $header-height;
+	text-align: center;
+	li {
+		display: inline-block;
+		padding: ($header-height - $header-font-size)/2 0;
+	}
+	a {
+		padding: ($header-height - $header-font-size)/2 25px;
+	}
+}

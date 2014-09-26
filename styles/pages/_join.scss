@@ -1,0 +1,54 @@
+#nonprofits, #universities, #join {
+	@include photo_block("img/join_photo_block.jpg");
+	background: white;
+
+	.navigation {
+		border-bottom: 1px solid $dark-grey;
+	}
+
+	.nav {
+		@include top_navigation;
+		a.active {
+			color: $main_blue;
+		}
+		a:hover {
+			color: black;
+		}
+		a.active:hover {
+			color: $main-blue;
+		}
+	}
+
+	.webform {
+		@include webform_and_social;
+
+		&.student form {
+			input[name="last_name"] {
+				margin-bottom: 0;
+			}
+			select {
+				margin-bottom: 6px;
+			}
+		}
+
+		&.university form {
+			textarea {
+				height: 84px;
+			}
+
+			input[name="email"] {
+				margin-bottom: 0;
+			}
+		}
+
+		&.nonprofit form {
+			select {
+				margin-bottom: 0;
+			}
+
+			textarea {
+				height: 99px;
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+/*
+Theme Name: Global App Initiative
+Description: The website created for Global App Initiative
+Author: Ivan Uvarov
+Version: 1.0
+Tags: clean, light, responsive, twelve-column
+
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+//bootstrap 
+@import "bootstrap";
+
+// Resets basic styles
+@import "styles/_reset.scss";
+// Layout of the website
+@import "styles/_layout.scss";
+
+
+// Definings
+@import "styles/_variables.scss";
+@import "styles/_mixins.scss";
+
+// Global Styles
+@import "styles/_global.scss";
+
+// Page specifics
+@import "styles/pages/_main.scss";
+@import "styles/pages/_about.scss";
+@import "styles/pages/_projects.scss";
+@import "styles/pages/_tutorials.scss";
+@import "styles/pages/_team.scss";
+@import "styles/pages/_sponsors.scss";
+@import "styles/pages/_join.scss";
+@import "styles/pages/_contact.scss";
+@import "styles/pages/_legal.scss";
+@import "styles/pages/_press.scss";
+@import "styles/pages/_home.scss"; 

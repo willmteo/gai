@@ -1,0 +1,78 @@
+#tutorials{
+	@include photo_block("img/tutorials_photo_block.jpg");
+	background: white;
+
+	.center{
+		img{
+    		line-height: 1;
+    		border: 1px solid #ddd;
+    		-webkit-border-radius: 4px;
+    		-moz-border-radius: 4px;
+    		border-radius: 4px;
+    		-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+    		-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+    		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+		}
+	}
+
+	.navigation {
+		border-bottom: 1px solid $dark-grey;
+	}
+
+	.tutorial {
+		padding: 2em 0 2em 0;
+		border-bottom: 1px solid $dark-grey;
+	}
+
+	.nav {
+		@include top_navigation;
+		li a {
+			&.active {
+				color: $main-blue;
+			}
+			&:hover {
+				color: black;
+			}
+			&.active:hover {
+				color: $main-blue;
+			}
+		}
+
+	}
+		
+	iframe {
+		@include column(4.5);
+		@include push(1);
+	}
+	.video_description {
+
+		@include column(5.5);
+		@include push(1);
+		> p {
+			line-height: 1.25em;
+		}
+
+		.video_text {
+			height: 200px;
+			display:table-cell;
+    		vertical-align:middle;
+			
+			.video_title {
+				font-size: 1.25em;
+				font-weight: bold;
+			}
+
+			input{
+				padding: 6px 11px 7px !important;
+				font-size: 13px !important;
+				background-color: #6E6E6E;
+				font-weight: bold;
+				text-shadow: 1px 1px #6E6E6E;
+				color: #FFF;
+				border-radius: 20px;
+				border: 1px solid #6E6E6E;
+				cursor: pointer;
+			}
+		}
+	}		
+}
