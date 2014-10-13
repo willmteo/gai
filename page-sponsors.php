@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="center">
-	<h1>Our Sponsors</h1>
+	<h1>Our Sponsors Test</h1>
 
 	<div class = "col">
 		<div class = "col-1-1">
